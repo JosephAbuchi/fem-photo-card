@@ -1,0 +1,140 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+body {
+  font-family: "Kumbh Sans", sans-serif;
+  margin: 0;
+  overflow: hidden;
+}
+.name-victor {
+  text-align: center;
+  width: 120px;
+  margin-top: 4rem;
+  line-height: 1.5;
+  position: relative;
+  left: 7rem;
+}
+
+@media (max-width: 1440px) {
+  .attribution {
+    font-size: 11px;
+    text-align: center;
+  }
+
+  .attribution a {
+    color: hsl(228, 45%, 44%);
+  }
+
+  .main-container {
+    position: relative;
+    height: 100vh;
+    background-color: hsl(185, 75%, 39%);
+    display: grid;
+    align-content: center;
+    justify-content: center;
+  }
+
+  .main-container .bg-photo-top {
+    position: absolute;
+    top: -25rem;
+    left: -21rem;
+  }
+  .main-container .bg-photo-bottom {
+    position: absolute;
+    top: 25rem;
+    left: 40rem;
+  }
+
+  .inner-container {
+    z-index: 1;
+    background-color: white;
+    border-radius: 15px;
+    width: fit-content;
+  }
+
+  .profile-photo {
+    position: absolute;
+    left: 42rem;
+    top: 20rem;
+    bottom: 2.7rem;
+  }
+
+  .profile-photo img {
+    height: 80px;
+    object-fit: contain;
+    border-radius: 100%;
+    border: 5px solid white;
+  }
+
+  main {
+    margin-bottom: 1rem;
+  }
+
+  .name-victor {
+    text-align: center;
+    width: 120px;
+    margin-top: 4rem;
+    line-height: 1.5;
+    position: relative;
+    left: 7rem;
+  }
+
+  main span {
+    color: hsl(227, 10%, 46%);
+  }
+
+  footer {
+    display: flex;
+    justify-content: space-between;
+    margin: 1.5rem 4rem;
+  }
+
+  footer .footer-inner-container {
+    display: grid;
+    text-align: center;
+    line-height: 1.5;
+  }
+
+  footer span {
+    color: hsl(227, 10%, 46%);
+    font-size: 10px;
+    font-weight: 100;
+  }
+
+  .background-image {
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+  }
+
+  hr {
+    border: transparent slategrey;
+    border-bottom: 0;
+  }
+}
+
+@media (max-width: 375px) {
+  .main-container {
+    overflow: hidden;
+  }
+
+  .profile-photo {
+    position: absolute;
+    left: 9rem;
+    top: 17rem;
+    bottom: 2.7rem;
+  }
+  .main-container .bg-photo-top {
+    top: -25rem;
+    left: -52rem;
+    position: absolute;
+    object-fit: contain;
+  }
+  .main-container .bg-photo-bottom {
+    top: 18rem;
+    left: 5rem;
+    position: absolute;
+    object-fit: contain;
+  }
+}
